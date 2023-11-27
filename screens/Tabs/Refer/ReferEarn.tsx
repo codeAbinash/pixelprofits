@@ -1,27 +1,25 @@
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import React from 'react'
 import {
+  Alert,
+  Clipboard,
+  Image,
+  ScrollView,
+  Share,
   StyleSheet,
   Text,
-  View,
-  SafeAreaView,
-  ScrollView,
-  Image,
   TouchableOpacity,
-  BackHandler,
-  Clipboard,
-  Share,
+  View,
+  useWindowDimensions,
 } from 'react-native'
-import React from 'react'
-import { colors } from '../../../styles/colors'
+import { playStoreLink } from '../../../appData'
 import icons from '../../../assets/icons/icons'
 import images from '../../../assets/images/images'
-import { useWindowDimensions } from 'react-native'
 import ButtonFull from '../../../components/ButtonFull'
-import { Alert } from 'react-native'
-import vars from '../../../styles/var'
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import { UserData } from '../../types'
-import { playStoreLink } from '../../../appData'
+import { colors } from '../../../styles/colors'
 import { fonts } from '../../../styles/fonts'
+import vars from '../../../styles/var'
+import { UserData } from '../../types'
 
 const ReferEarn = ({ navigation }: any) => {
   const { width } = useWindowDimensions()

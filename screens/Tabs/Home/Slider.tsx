@@ -1,13 +1,10 @@
-import { StyleSheet, Text, View, ScrollView, useWindowDimensions, Image, TouchableOpacity, Linking } from 'react-native'
-import React, { useEffect, useRef, useState } from 'react'
-import { FlatList } from 'react-native'
-import { colors } from '../../../styles/colors'
-import images from '../../../assets/images/images'
-import { Touchable } from 'react-native'
-import Loading from '../../../components/Loading'
-import { API_URL } from '../../../appData'
-import { getDefaultHeader } from '../../methods'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import React, { useEffect, useRef, useState } from 'react'
+import { Image, Linking, ScrollView, StyleSheet, TouchableOpacity, View, useWindowDimensions } from 'react-native'
+import { API_URL } from '../../../appData'
+import Loading from '../../../components/Loading'
+import { colors } from '../../../styles/colors'
+import { getDefaultHeader } from '../../methods'
 
 // const scrollImages = [
 // 	'https://source.unsplash.com/random/500x300',

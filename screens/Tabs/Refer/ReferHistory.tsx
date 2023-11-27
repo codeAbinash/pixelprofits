@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View, Image, Dimensions, ScrollView } from 'react-native'
-import React, { useEffect } from 'react'
-import icons from '../../../assets/icons/icons'
-import { fonts } from '../../../styles/fonts'
-import { colors } from '../../../styles/colors'
-import Loading from '../../../components/Loading'
-import { getDefaultHeader } from '../../methods'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import React, { useEffect } from 'react'
+import { Dimensions, Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { API_URL } from '../../../appData'
+import icons from '../../../assets/icons/icons'
+import Loading from '../../../components/Loading'
+import { colors } from '../../../styles/colors'
+import { fonts } from '../../../styles/fonts'
+import { getDefaultHeader } from '../../methods'
 
 const { width, height } = Dimensions.get('window')
 

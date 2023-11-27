@@ -4,23 +4,22 @@ import {
   Animated,
   FlatList,
   Image,
+  Linking,
   SafeAreaView,
   StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
-  useWindowDimensions,
   View,
-  Linking,
+  useWindowDimensions,
 } from 'react-native'
+import { t_and_c_link } from '../../appData'
 import icons from '../../assets/icons/icons'
-import buttons from '../../styles/buttons'
 import { colors } from '../../styles/colors'
 import { fonts } from '../../styles/fonts'
 import txt from '../../styles/text'
-import data from './onboardingData'
 import Paginator from './Paginator'
-import { t_and_c_link } from '../../appData'
+import data from './onboardingData'
 
 const Onboarding = ({ navigation }: any) => {
   const [currentIndex, setCurrentIndex] = React.useState(0)

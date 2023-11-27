@@ -1,28 +1,28 @@
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { useIsFocused } from '@react-navigation/native'
+import React, { useEffect } from 'react'
 import {
-  StyleSheet,
-  Text,
-  View,
+  Alert,
+  Dimensions,
   Image,
-  TextInput,
-  TouchableOpacity,
   Linking,
   Modal,
-  Dimensions,
-  Alert,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native'
-import React, { useEffect } from 'react'
-import { ScrollView } from 'react-native'
+import { API_URL } from '../../appData'
+import icons from '../../assets/icons/icons'
+import images from '../../assets/images/images'
+import ButtonFull from '../../components/ButtonFull'
+import CustomModal from '../../components/CustomModal'
+import Loading from '../../components/Loading'
 import { colors } from '../../styles/colors'
 import { fonts } from '../../styles/fonts'
-import images from '../../assets/images/images'
-import icons from '../../assets/icons/icons'
-import ButtonFull from '../../components/ButtonFull'
-import Loading from '../../components/Loading'
-import { API, API_URL } from '../../appData'
-import AsyncStorage from '@react-native-async-storage/async-storage'
 import { getDefaultHeader } from '../methods'
-import { Link, useIsFocused } from '@react-navigation/native'
-import CustomModal from '../../components/CustomModal'
 
 type OfferData = {
   id: number

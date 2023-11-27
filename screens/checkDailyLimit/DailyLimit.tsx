@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View, BackHandler } from 'react-native'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import React, { useEffect, useState } from 'react'
-import Loading from '../../components/Loading'
+import { BackHandler, StyleSheet, Text, View } from 'react-native'
 import changeNavigationBarColor from 'react-native-navigation-bar-color'
 import { API_URL } from '../../appData'
-import { getDefaultHeader } from '../methods'
-import AsyncStorage from '@react-native-async-storage/async-storage'
 import CustomModal from '../../components/CustomModal'
+import Loading from '../../components/Loading'
+import { getDefaultHeader } from '../methods'
 const DailyLimit = ({ navigation, route }: any) => {
   const [modals, setModals] = useState<any>([])
   const earnedCoins = route.params.earnedCoins

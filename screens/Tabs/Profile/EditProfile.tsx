@@ -1,15 +1,14 @@
-import { TextInput, BackHandler, StyleSheet, Text, Image, View, ScrollView, TouchableOpacity } from 'react-native'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import React from 'react'
+import { BackHandler, Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { launchImageLibrary } from 'react-native-image-picker'
+import { API_URL } from '../../../appData'
 import icons from '../../../assets/icons/icons'
-import { colors } from '../../../styles/colors'
-import styles from '../../login/styles'
 import ButtonFull from '../../../components/ButtonFull'
 import CustomModal from '../../../components/CustomModal'
-import { launchCamera, launchImageLibrary } from 'react-native-image-picker'
-import images from '../../../assets/images/images'
+import { colors } from '../../../styles/colors'
 import { fonts } from '../../../styles/fonts'
-import { API_URL } from '../../../appData'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import styles from '../../login/styles'
 
 const EditProfile = ({ route, navigation }: any) => {
   const [name, setName] = React.useState(route.params.name || '')
@@ -129,8 +128,10 @@ const EditProfile = ({ route, navigation }: any) => {
       })
       if (res.didCancel || res.errorMessage) return
       setIsImageSelected(true)
-      const uri: any = res?.assets[0]?.uri as string
-      setProfilePic(uri)
+      const assets: any = res?.assets as any
+      const uri: any = assets[0]?.uri
+
+      setProfilePic(uri as string)
     } catch (e) {
       console.log(e)
     }

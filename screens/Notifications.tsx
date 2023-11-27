@@ -1,14 +1,14 @@
-import { Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React, { useEffect } from 'react'
-import Loading from '../components/Loading'
-import { getDefaultHeader } from './methods'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import React, { useEffect } from 'react'
+import { Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { API_URL } from '../appData'
-import images from '../assets/images/images'
-import { fonts } from '../styles/fonts'
-import { colors } from '../styles/colors'
 import icons from '../assets/icons/icons'
+import images from '../assets/images/images'
 import CustomModal from '../components/CustomModal'
+import Loading from '../components/Loading'
+import { colors } from '../styles/colors'
+import { fonts } from '../styles/fonts'
+import { getDefaultHeader } from './methods'
 
 const { width, height } = Dimensions.get('window')
 

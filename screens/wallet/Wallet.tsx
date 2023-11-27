@@ -1,28 +1,16 @@
-import {
-  ActivityIndicator,
-  Alert,
-  FlatList,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from 'react-native'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import React, { useEffect, useState } from 'react'
+import { Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { API_URL, INR_TO_COINS, inr_to_coins } from '../../appData'
+import icons from '../../assets/icons/icons'
+import ButtonFull from '../../components/ButtonFull'
+import CustomModal from '../../components/CustomModal'
 import Loading from '../../components/Loading'
 import { colors } from '../../styles/colors'
-import images from '../../assets/images/images'
-import icons from '../../assets/icons/icons'
-import input from '../../styles/input'
-import ButtonFull from '../../components/ButtonFull'
-import WithdrawHistory from './WithdrawHistory'
 import { fonts } from '../../styles/fonts'
+import input from '../../styles/input'
 import { getDefaultHeader } from '../methods'
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import { API_URL, INR_TO_COINS, coins_to_inr, inr_to_coins } from '../../appData'
-import CustomModal from '../../components/CustomModal'
+import WithdrawHistory from './WithdrawHistory'
 
 const data = [
   {

@@ -1,27 +1,14 @@
-import {
-  Alert,
-  Animated,
-  Dimensions,
-  Easing,
-  Image,
-  StatusBar,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  BackHandler,
-} from 'react-native'
-import React, { useEffect, useState } from 'react'
-import images from '../../assets/images/images'
-import { fonts } from '../../styles/fonts'
-import ButtonFull from '../../components/ButtonFull'
-import { colors } from '../../styles/colors'
-import changeNavigationBarColor, { hideNavigationBar } from 'react-native-navigation-bar-color'
-import icons from '../../assets/icons/icons'
-import { API_URL } from '../../appData'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import { getDefaultHeader } from '../methods'
+import React, { useEffect, useState } from 'react'
+import { Animated, BackHandler, Dimensions, Easing, Image, StatusBar, StyleSheet, Text, View } from 'react-native'
+import changeNavigationBarColor from 'react-native-navigation-bar-color'
+import { API_URL } from '../../appData'
+import icons from '../../assets/icons/icons'
+import images from '../../assets/images/images'
+import ButtonFull from '../../components/ButtonFull'
 import CustomModal from '../../components/CustomModal'
+import { fonts } from '../../styles/fonts'
+import { getDefaultHeader } from '../methods'
 
 const SPIN_DURATION = 5000
 

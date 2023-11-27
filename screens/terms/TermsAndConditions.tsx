@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
-import { ScrollView } from 'react-native'
+import { SafeAreaView, ScrollView, StyleSheet, Text } from 'react-native'
 import { colors } from '../../styles/colors'
 
 const TermsAndConditions = () => {

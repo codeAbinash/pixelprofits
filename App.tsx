@@ -1,37 +1,29 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { useEffect } from 'react'
+import { Text, View } from 'react-native'
+import OneSignal from 'react-native-onesignal'
+import Test from './components/Test'
 import Home from './screens/Home'
+import InstallAndEarn from './screens/InstallAndEarn'
+import Notifications from './screens/Notifications'
+import RewardAdScreen from './screens/RewardAdScreen'
+import Splash from './screens/Splash'
+import EditProfile from './screens/Tabs/Profile/EditProfile'
+import ReferHistory from './screens/Tabs/Refer/ReferHistory'
+import Promotions from './screens/Tabs/others/Promotion'
+import Spin from './screens/Tasks/Spin'
+import TaskTutorial from './screens/Tasks/TaskTutorial'
+import YouTubeTask from './screens/Tasks/YouTubeTask'
+import DailyLimit from './screens/checkDailyLimit/DailyLimit'
 import Login from './screens/login/Login'
+import OTP from './screens/login/OTP'
 import SignUp from './screens/login/SignUp'
 import Onboarding from './screens/onboarding/Onboarding'
-import Splash from './screens/Splash'
-import OTP from './screens/login/OTP'
-import TermsAndConditions from './screens/terms/TermsAndConditions'
-import Notifications from './screens/Notifications'
-import ReferHistory from './screens/Tabs/Refer/ReferHistory'
-import PrivacyPolicy from './screens/terms/PrivacyPolicy'
-import About from './screens/terms/About'
-import Test from './components/Test'
 import Wallet from './screens/wallet/Wallet'
-import Promotions from './screens/Tabs/others/Promotion'
-import YouTubeTask from './screens/Tasks/YouTubeTask'
-import TaskTutorial from './screens/Tasks/TaskTutorial'
-import Spin from './screens/Tasks/Spin'
-import ReferEarn from './screens/Tabs/Refer/ReferEarn'
-import RewardAdScreen from './screens/RewardAdScreen'
-import DailyLimit from './screens/checkDailyLimit/DailyLimit'
-import { AppState, AppStateStatus, Text, View } from 'react-native'
-import EditProfile from './screens/Tabs/Profile/EditProfile'
-import InstallAndEarn from './screens/InstallAndEarn'
-import { useEffect } from 'react'
-import OneSignal from 'react-native-onesignal'
 
-import {
-  ImpressionData,
-  ImpressionDataEvents,
-  InitializationEvents as InitEvent,
-  IronSource,
-} from 'ironsource-mediation'
+import { ImpressionData, ImpressionDataEvents, IronSource } from 'ironsource-mediation'
+import Questions from './screens/Tasks/Questions'
 import Update from './screens/Update'
 
 const Stack = createNativeStackNavigator()
@@ -158,18 +150,10 @@ const App = () => {
           options={{ title: 'Install and Earn', headerShown: false }}
         />
         <Stack.Screen name='Update' component={Update} options={{ title: 'Update Available', headerShown: false }} />
-        <Stack.Screen name='question' component={Question} options={{ title: 'Questions', headerShown: true }} />
+        <Stack.Screen name='questions' component={Questions} options={{ title: 'Questions', headerShown: true }} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
 
 export default App
-
-function Question() {
-  return (
-    <View>
-      <Text>Question</Text>
-    </View>
-  )
-}

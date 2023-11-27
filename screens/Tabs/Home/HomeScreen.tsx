@@ -1,9 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import { useIsFocused } from '@react-navigation/native'
+import React, { useEffect, useMemo, useState } from 'react'
 import {
-  Dimensions,
   BackHandler,
-  ToastAndroid,
+  Dimensions,
   Image,
   Linking,
   Modal,
@@ -12,21 +12,20 @@ import {
   StatusBar,
   StyleSheet,
   Text,
+  ToastAndroid,
   TouchableOpacity,
   View,
 } from 'react-native'
+import changeNavigationBarColor from 'react-native-navigation-bar-color'
+import { API_URL } from '../../../appData'
 import icons from '../../../assets/icons/icons'
+import ButtonFull from '../../../components/ButtonFull'
+import CustomModal from '../../../components/CustomModal'
 import { colors } from '../../../styles/colors'
 import { fonts } from '../../../styles/fonts'
+import { getDefaultHeader, storeUserData } from '../../methods'
 import { UserData } from '../../types'
 import Slider from './Slider'
-import changeNavigationBarColor, { hideNavigationBar } from 'react-native-navigation-bar-color'
-import { API, API_URL } from '../../../appData'
-import { getDefaultHeader, storeUserData } from '../../methods'
-import { useFocusEffect, useIsFocused } from '@react-navigation/native'
-import CustomModal from '../../../components/CustomModal'
-import images from '../../../assets/images/images'
-import ButtonFull from '../../../components/ButtonFull'
 
 const { width, height } = Dimensions.get('window')
 

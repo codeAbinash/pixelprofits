@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, Image, Linking, StatusBar, Dimensions } from 'react-native'
 import React from 'react'
+import { Dimensions, Image, Linking, StatusBar, StyleSheet, Text, View } from 'react-native'
 import images from '../assets/images/images'
-import { fonts } from '../styles/fonts'
 import ButtonFull from '../components/ButtonFull'
+import { fonts } from '../styles/fonts'
 
 const { width, height } = Dimensions.get('window')
 

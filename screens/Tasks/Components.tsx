@@ -1,10 +1,10 @@
-import { TouchableOpacity, Linking, Text, Image, Dimensions, View, Alert, Clipboard, Animated } from 'react-native'
-import buttons from '../../styles/buttons'
-import { fonts } from '../../styles/fonts'
-import { colors } from '../../styles/colors'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { Alert, Animated, Clipboard, Dimensions, Image, Linking, Text, TouchableOpacity, View } from 'react-native'
 import icons from '../../assets/icons/icons'
 import ButtonFull from '../../components/ButtonFull'
+import buttons from '../../styles/buttons'
+import { colors } from '../../styles/colors'
+import { fonts } from '../../styles/fonts'
 
 const { width } = Dimensions.get('window')
 function addZero(num: number) {

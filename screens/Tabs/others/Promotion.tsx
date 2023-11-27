@@ -1,21 +1,10 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Modal,
-  Alert,
-  TouchableOpacity,
-  Image,
-  ScrollView,
-  Button,
-  Linking,
-} from 'react-native'
 import React from 'react'
-import images from '../../../assets/images/images'
-import { colors } from '../../../styles/colors'
-import ButtonFull from '../../../components/ButtonFull'
-import { fonts } from '../../../styles/fonts'
+import { Image, Linking, StyleSheet, Text, View } from 'react-native'
 import { email } from '../../../appData'
+import images from '../../../assets/images/images'
+import ButtonFull from '../../../components/ButtonFull'
+import { colors } from '../../../styles/colors'
+import { fonts } from '../../../styles/fonts'
 
 const Promotion = () => {
   const [modalVisible, setModalVisible] = React.useState(false)

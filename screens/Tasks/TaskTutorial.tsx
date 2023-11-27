@@ -1,11 +1,11 @@
-import { Dimensions, StatusBar, StyleSheet, ScrollView, Text, View, Image, TouchableOpacity, Alert } from 'react-native'
-import React, { useEffect } from 'react'
-import { fonts } from '../../styles/fonts'
-import Video from 'react-native-video'
-import { colors } from '../../styles/colors'
-import ButtonFull from '../../components/ButtonFull'
-import icons from '../../assets/icons/icons'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import React, { useEffect } from 'react'
+import { Dimensions, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import Video from 'react-native-video'
+import icons from '../../assets/icons/icons'
+import ButtonFull from '../../components/ButtonFull'
+import { colors } from '../../styles/colors'
+import { fonts } from '../../styles/fonts'
 
 const video_url: any = {
   youtube: 'https://winkaro.yourexpand.in/storage/tutorials/youtube.mp4',

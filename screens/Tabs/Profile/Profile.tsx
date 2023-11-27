@@ -1,27 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import React, { useEffect, useState } from 'react'
-import {
-  Alert,
-  Image,
-  Linking,
-  Modal,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native'
-import icons from '../../../assets/icons/icons'
-import { colors } from '../../../styles/colors'
-import { fonts } from '../../../styles/fonts'
-import { UserData } from '../../types'
-import CustomModal from '../../../components/CustomModal'
-import { launchImageLibrary } from 'react-native-image-picker'
 import { useIsFocused } from '@react-navigation/native'
-import { getDefaultHeader, storeUserData } from '../../methods'
+import React, { useEffect, useState } from 'react'
+import { Image, Linking, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import {
-  API,
   API_URL,
   APP_VERSION_NAME,
   about_us_link,
@@ -29,6 +10,12 @@ import {
   privacy_policy_link,
   t_and_c_link,
 } from '../../../appData'
+import icons from '../../../assets/icons/icons'
+import CustomModal from '../../../components/CustomModal'
+import { colors } from '../../../styles/colors'
+import { fonts } from '../../../styles/fonts'
+import { getDefaultHeader, storeUserData } from '../../methods'
+import { UserData } from '../../types'
 
 const Profile = ({ navigation }: any) => {
   const options = [

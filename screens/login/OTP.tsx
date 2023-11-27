@@ -1,25 +1,23 @@
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import React, { useEffect, useState } from 'react'
 import {
+  Image,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
-  View,
-  SafeAreaView,
-  StatusBar,
-  ScrollView,
-  Image,
   TextInput,
-  Alert,
   TouchableOpacity,
+  View,
 } from 'react-native'
-import React, { useEffect, useState } from 'react'
-import images from '../../assets/images/images'
-import { colors } from '../../styles/colors'
-import ButtonFull from '../../components/ButtonFull'
-import buttons from '../../styles/buttons'
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import { API_URL } from '../../appData'
 import DeviceInfo from 'react-native-device-info'
-import { fonts } from '../../styles/fonts'
+import { API_URL } from '../../appData'
+import images from '../../assets/images/images'
 import CustomModal from '../../components/CustomModal'
+import buttons from '../../styles/buttons'
+import { colors } from '../../styles/colors'
+import { fonts } from '../../styles/fonts'
 import { getDefaultHeader } from '../methods'
 
 const OTP = ({ route, navigation }: any) => {

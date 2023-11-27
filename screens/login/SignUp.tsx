@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {
   Image,
+  Linking,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -8,7 +9,6 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-  Linking,
 } from 'react-native'
 import DeviceInfo from 'react-native-device-info'
 // import { TextInput } from 'react-native/Libraries/Components/TextInput/TextInput'
@@ -19,9 +19,8 @@ import ButtonFull from '../../components/ButtonFull'
 import CustomModal from '../../components/CustomModal'
 import { colors } from '../../styles/colors'
 import { fonts } from '../../styles/fonts'
-import styles from './styles'
 import { getDefaultHeader } from '../methods'
-import { Alert } from 'react-native'
+import styles from './styles'
 
 const SignUp = ({ navigation }: any) => {
   let [deviceId, setDeviceId] = useState('')

@@ -1,10 +1,9 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Image, Text, View } from 'react-native'
 import icons from '../../assets/icons/icons'
+import Loading from '../../components/Loading'
 import { colors } from '../../styles/colors'
 import { fonts } from '../../styles/fonts'
-import Loading from '../../components/Loading'
-import { coins_to_inr } from '../../appData'
 
 const WithdrawHistory = ({ data }: any) => {
   if (!data) {

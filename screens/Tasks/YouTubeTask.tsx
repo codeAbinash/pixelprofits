@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react'
 import {
   // Alert,
   // BackHandler,
@@ -13,33 +14,30 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import React, { useEffect, useMemo, useState } from 'react'
-import { fonts } from '../../styles/fonts'
 import { colors } from '../../styles/colors'
+import { fonts } from '../../styles/fonts'
 // import images from '../../assets/images/images'
 // import { Touchable } from 'react-native'
-import ButtonFull from '../../components/ButtonFull'
 import icons from '../../assets/icons/icons'
+import ButtonFull from '../../components/ButtonFull'
 // import Video from 'react-native-video'
-import buttons from '../../styles/buttons'
-import { Linking } from 'react-native'
-import CustomModal from '../../components/CustomModal'
-import { getDefaultHeader } from '../methods'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { API_URL } from '../../appData'
+import CustomModal from '../../components/CustomModal'
 import Loading from '../../components/Loading'
+import buttons from '../../styles/buttons'
+import { getDefaultHeader } from '../methods'
 // import { Clipboard } from 'react-native'
-import RNRestart from 'react-native-restart'
 import {
+  SwipeUp,
+  TaskAmount,
   // GoBtn,
   TaskRejectedUI,
   TaskStatusUI,
-  copyToClipboard,
-  TaskAmount,
-  SwipeUp,
   // WatchTutorial,
   // Uploading,
   WatchHelp,
+  copyToClipboard,
 } from './Components'
 
 const { height, width } = Dimensions.get('window')
@@ -98,7 +96,7 @@ export default function YouTubeTask({ route, navigation }: any) {
 
   function startTask(index: number, id: number, url: string) {
     // Linking.openURL(url)
-    navigation.replace('question', { taskType: taskType, index: index, id: id })
+    navigation.replace('questions', { taskType: taskType, index: index, id: id })
   }
 
   if (tasks === null) return <Loading />

@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import React, { useEffect, useState } from 'react'
 import { IronSource, IronSourceError, IronSourceOWCreditInfo, OfferwallEvents as OW } from 'ironsource-mediation'
+import React, { useEffect, useState } from 'react'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 const p = console.log
 const e = console.error
 

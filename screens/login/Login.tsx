@@ -1,33 +1,27 @@
+import React, { useEffect, useState } from 'react'
 import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  Text,
-  View,
   Image,
-  Button,
+  Linking,
+  SafeAreaView,
+  ScrollView,
   StatusBar,
+  Text,
   TextInput,
   TouchableOpacity,
-  Modal,
-  Linking,
+  View,
 } from 'react-native'
-import React, { useEffect, useState } from 'react'
 
 // import { TextInput } from 'react-native/Libraries/Components/TextInput/TextInput'
+import DeviceInfo from 'react-native-device-info'
+import { API_URL, t_and_c_link } from '../../appData'
 import icons from '../../assets/icons/icons'
 import images from '../../assets/images/images'
-import { colors } from '../../styles/colors'
 import ButtonFull from '../../components/ButtonFull'
-import { Alert } from 'react-native'
-import buttons from '../../styles/buttons'
-import styles from './styles'
-import { API_URL, t_and_c_link } from '../../appData'
-import { fonts } from '../../styles/fonts'
 import CustomModal from '../../components/CustomModal'
+import { colors } from '../../styles/colors'
+import { fonts } from '../../styles/fonts'
 import { getDefaultHeader } from '../methods'
-import DeviceInfo from 'react-native-device-info'
-import { Link } from '@react-navigation/native'
+import styles from './styles'
 
 // import { StatusBar } from 'react-native/Libraries/Components/StatusBar/StatusBar'
 

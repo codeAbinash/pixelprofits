@@ -1,7 +1,7 @@
-import { Image, StyleSheet, ScrollView, Text, View } from 'react-native'
 import React from 'react'
-import Loading from '../../components/Loading'
+import { Image, ScrollView, StyleSheet, View } from 'react-native'
 import images from '../../assets/images/images'
+import Loading from '../../components/Loading'
 
 const Withdraw = () => {
   return (
