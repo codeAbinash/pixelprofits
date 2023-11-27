@@ -158,9 +158,18 @@ const App = () => {
           options={{ title: 'Install and Earn', headerShown: false }}
         />
         <Stack.Screen name='Update' component={Update} options={{ title: 'Update Available', headerShown: false }} />
+        <Stack.Screen name='question' component={Question} options={{ title: 'Questions', headerShown: true }} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
 
 export default App
+
+function Question() {
+  return (
+    <View>
+      <Text>Question</Text>
+    </View>
+  )
+}

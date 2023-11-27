@@ -320,22 +320,22 @@ function Tasks({ navigation }: any) {
 
   const tasks = [
     {
-      name: 'Youtube Tasks',
+      name: 'Youtube Check-in',
       icons: icons.youtube,
       callback: () => openTaskPage('youtube'),
     },
     {
-      name: 'Yt Short Tasks',
+      name: 'Yt Short Check-in',
       icons: icons.youtube_shorts,
       callback: () => openTaskPage('yt_shorts'),
     },
     {
-      name: 'Instagram Tasks',
+      name: 'Instagram Check-in',
       icons: icons.insta,
       callback: () => openTaskPage('instagram'),
     },
     {
-      name: 'App install Tasks',
+      name: 'App install Check-in',
       icons: icons.download,
       callback: () =>
         setModals([
@@ -416,7 +416,7 @@ const taskStyles = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    // alignItems: 'center',
+    alignItems: 'center',
   },
   task: {
     backgroundColor: '#f5f5f5',
