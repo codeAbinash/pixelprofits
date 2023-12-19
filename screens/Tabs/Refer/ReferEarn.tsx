@@ -214,7 +214,7 @@ const ReferEarn = ({ navigation }: any) => {
                 width: '80%',
               }}
             >
-              You will get 200 coins per refer.
+              You will get ₹20 per refer.
             </Text>
           </View>
           <View style={{ width: '45%' }}>

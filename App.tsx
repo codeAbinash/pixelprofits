@@ -133,12 +133,12 @@ const App = () => {
         <Stack.Screen
           name='YouTubeTask'
           component={YouTubeTask}
-          options={{ title: 'YouTube Task', headerShown: false }}
+          options={{ title: 'YouTube Check-In', headerShown: false }}
         />
         <Stack.Screen
           name='TaskTutorial'
           component={TaskTutorial}
-          options={{ title: 'YouTube Task Tutorial', headerShown: false }}
+          options={{ title: 'YouTube Check-In Tutorial', headerShown: false }}
         />
         <Stack.Screen name='Spin' component={Spin} options={{ headerShown: false }} />
         <Stack.Screen name='RewardAd' component={RewardAdScreen} options={{ title: 'RewardAd', headerShown: false }} />

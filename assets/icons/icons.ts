@@ -1,4 +1,6 @@
 const icons = {
+  app: require('./src/app.png'),
+  website: require('./src/website.png'),
   right_arrow: require('./src/right-arrow.png'),
   logo: require('./src/logo.png'),
   profile: require('./src/profile.png'),

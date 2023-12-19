@@ -89,6 +89,7 @@ export default function YouTubeTask({ route, navigation }: any) {
     })
     const data = await res.json()
     setTasks(data.data)
+    console.log(data.data)
   }
   useEffect(() => {
     getTasks(taskType)

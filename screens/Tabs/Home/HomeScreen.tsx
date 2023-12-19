@@ -319,22 +319,22 @@ function Tasks({ navigation }: any) {
 
   const tasks = [
     {
-      name: 'Youtube Check-in',
+      name: 'YouTube Check-In',
       icons: icons.youtube,
       callback: () => openTaskPage('youtube'),
     },
     {
-      name: 'Yt Short Check-in',
-      icons: icons.youtube_shorts,
+      name: 'Website Check-In',
+      icons: icons.website,
       callback: () => openTaskPage('yt_shorts'),
     },
     {
-      name: 'Instagram Check-in',
+      name: 'Instagram Check-In',
       icons: icons.insta,
       callback: () => openTaskPage('instagram'),
     },
     {
-      name: 'App install Check-in',
+      name: 'Our Apps',
       icons: icons.download,
       callback: () =>
         setModals([
