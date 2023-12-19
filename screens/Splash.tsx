@@ -218,11 +218,11 @@ const Splash = ({ navigation }: any) => {
             <Text
               style={{
                 color: 'white',
-                fontSize: 100,
+                fontSize: 30,
                 fontFamily: fonts.semiBold,
               }}
             >
-              WK
+              PixelProfits
             </Text>
           </View>
         </Animated.View>
