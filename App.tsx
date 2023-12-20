@@ -90,7 +90,7 @@ const App = () => {
   // }, [])
 
   useEffect(() => {
-    OneSignal.setAppId('ed8f21a0-966c-4c5a-9b63-486a86bb699c')
+    OneSignal.setAppId('925887a2-fc42-47ed-96ca-88a84eff554c')
 
     //Method for handling notifications received while app in foreground
     OneSignal.setNotificationWillShowInForegroundHandler((notificationReceivedEvent) => {
