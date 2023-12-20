@@ -21,7 +21,7 @@ export const API_URL = {
   notifications_mark_read: API + 'notifications/mark_read',
   get_yt_task: API + 'tasks/get/youtube',
   get_insta_task: API + 'tasks/get/instagram',
-  get_yt_shorts_task: API + 'tasks/get/yt_shorts',
+  get_website_check_in: API + 'tasks/get/website_check_in',
   upload_task: API + 'tasks/submit/task',
   upload_task_v2: API + 'tasks/v2/submit/task',
   update_profile: API + 'profile/update_profile',

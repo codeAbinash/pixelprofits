@@ -44,7 +44,7 @@ const { height, width } = Dimensions.get('window')
 
 const API_LINKS: any = {
   youtube: API_URL.get_yt_task,
-  yt_shorts: API_URL.get_yt_shorts_task,
+  website_check_in: API_URL.get_website_check_in,
   instagram: API_URL.get_insta_task,
 }
 
