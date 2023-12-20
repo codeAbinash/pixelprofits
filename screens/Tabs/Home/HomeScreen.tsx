@@ -326,7 +326,7 @@ function Tasks({ navigation }: any) {
     {
       name: 'Website Check-In',
       icons: icons.website,
-      callback: () => openTaskPage('yt_shorts'),
+      callback: () => openTaskPage('website_check_in'),
     },
     {
       name: 'Instagram Check-In',
