@@ -148,13 +148,13 @@ const Offer = ({ navigation }: any) => {
             console.log(data)
             if (response.status === true || response.status === 'true') {
               offersData[2].link = {
-                link: response.data.video_link,
+                link: response.data?.video_link,
                 linkIcon: icons.youtube_icon,
                 linkText: 'Demo Video',
               }
               setOffersStatus([...offersData])
               // setAppRedirectLink(() => response.data.app_link)
-              appRedirectLink = response.data.app_link
+              appRedirectLink = response.data?.app_link
             } else {
               Alert.alert(
                 'There is some error while fetching app install link. Please check your internet connection. And try again later.',
