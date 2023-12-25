@@ -6,6 +6,7 @@ import {
   Dimensions,
   Easing,
   Image,
+  Linking,
   Modal,
   ScrollView,
   // StatusBar,
@@ -97,7 +98,7 @@ export default function YouTubeTask({ route, navigation }: any) {
   }, [])
 
   function startTask(index: number, id: number, url: string, question: QuestionT[]) {
-    // Linking.openURL(url)
+    Linking.openURL(url)
     navigation.replace('questions', { taskType, index, id, question })
   }
 
