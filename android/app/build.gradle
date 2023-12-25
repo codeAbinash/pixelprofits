@@ -119,9 +119,9 @@ android {
         }
         release {
             storeFile file('release-key.keystore')
-            storePassword 'winKaro@123'
-            keyAlias 'my-key-alias'
-            keyPassword 'winKaro@123'
+            storePassword 'pevyEz7F5Q2v0CX'
+            keyAlias 'alias_name'
+            keyPassword 'pevyEz7F5Q2v0CX'
         }
     }
     buildTypes {

@@ -83,7 +83,7 @@ const HomeScreen = ({ navigation }: any) => {
         setColors()
       }
     }
-    // loadPopup()
+    loadPopup()
   }, [])
 
   useEffect(() => {
