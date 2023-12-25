@@ -93,7 +93,7 @@ const Offer = ({ navigation }: any) => {
         setAppInstallModal(true)
         console.log(appRedirectLink)
         function redirect() {
-          Linking.openURL(appRedirectLink)
+          appRedirectLink && Linking.openURL(appRedirectLink)
         }
         setTimeout(redirect, 100)
       },
