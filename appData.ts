@@ -35,11 +35,19 @@ export const API_URL = {
   submit_answers: API + 'tasks/v3/submit/task',
 }
 
+export const video_url: any = {
+  youtube: 'https://odivrs.com/storage/tutorials/youtube.mp4',
+  instagram: 'https://odivrs.com/storage/tutorials/instagram.mp4',
+  website_check_in: 'https://odivrs.com/storage/tutorials/yt_shorts.mp4',
+}
+
 export const playStoreLink = 'https://play.google.com/store/apps/details?id=com.pixelprofits'
 export const t_and_c_link = 'https://odivrs.com/terms_and_conditions'
 export const privacy_policy_link = 'https://odivrs.com/privacy_policy'
 export const about_us_link = 'https://odivrs.com/about_us'
-export const instant_support_link = 'whatsapp://send?text=hello&phone=+918339061567'
+export const instant_support_link = 'whatsapp://send?text=hello&phone=+919668406142'
+export const promotion_contact_link = 'whatsapp://send?text=hello&phone=+919124156399'
+
 export const INR_TO_COINS = 100
 
 export function coins_to_inr(coins: number, balance: number) {

@@ -6,67 +6,46 @@ import icons from '../../assets/icons/icons'
 import ButtonFull from '../../components/ButtonFull'
 import { colors } from '../../styles/colors'
 import { fonts } from '../../styles/fonts'
+import { video_url } from '../../appData'
 
-const video_url: any = {
-  youtube: 'https://winkaro.yourexpand.in/storage/tutorials/youtube.mp4',
-  instagram: 'https://winkaro.yourexpand.in/storage/tutorials/instagram.mp4',
-  yt_shorts: 'https://winkaro.yourexpand.in/storage/tutorials/yt_shorts.mp4',
-}
 
 function steps(taskType: string) {
   switch (taskType) {
     case 'youtube':
       return (
         <>
-          <Text style={styles.stepsStyle}>1. First Click On Start Recording</Text>
-          <Text style={styles.stepsStyle}>2. Now Press The Go Button</Text>
-          <Text style={styles.stepsStyle}>3. Then Play The Video ( Whose Thumbnail Was Given In The Task )</Text>
-          <Text style={styles.stepsStyle}>
-            4. Now Do Like , Comment , Subscribe & Watch This Video Full . Without Any Skip ( On Normal 1x Speed )
-          </Text>
-          <Text style={styles.stepsStyle}>
-            5. After This Return To App And Then Click On Stop And Complete Button Wait Untill Video Uploading
-            Successfully
-          </Text>
-          <Text style={styles.stepsStyle}>
-            6. Now Your Task Is In Review , After Checking Your Money Will Be Added Into Your Wallet
-          </Text>
+          <Text style={styles.stepsStyle}>1. First Click On Start Task</Text>
+          <Text style={styles.stepsStyle}>2. It will redirect you to Youtube</Text>
+          <Text style={styles.stepsStyle}>3. Watch the video completely.</Text>
+          <Text style={styles.stepsStyle}>4. After watching the video return to the app.</Text>
+          <Text style={styles.stepsStyle}>5. Answer the questions asked in the app.</Text>
+          <Text style={styles.stepsStyle}>6. Then click on the Submit Answers button.</Text>
+          <Text style={styles.stepsStyle}>7. Now your should get your reward.</Text>
         </>
       )
     case 'instagram':
       return (
         <>
-          <Text style={styles.stepsStyle}>1. First Click On Start Recording</Text>
-          <Text style={styles.stepsStyle}>2. Now Press The Go Button</Text>
-          <Text style={styles.stepsStyle}>3. Then Play The Reel ( Whose Screenshot Was Given In The Task )</Text>
-          <Text style={styles.stepsStyle}>
-            4. Now Do Like , Comment , Save , Click On Share Button And Watch Complete Reel Once
-          </Text>
-          <Text style={styles.stepsStyle}>
-            5. After This Return To App And Then Click On Stop And Complete Button Wait Untill Video Uploading
-            Successfully
-          </Text>
-          <Text style={styles.stepsStyle}>
-            6. Now Your Task Is In Review , After Checking Your Money Will Be Added Into Your Wallet .
-          </Text>
+          <Text style={styles.stepsStyle}>1. First Click On Start Task</Text>
+          <Text style={styles.stepsStyle}>2. It will redirect you to Instagram</Text>
+          <Text style={styles.stepsStyle}>3. Watch the video/reel/post completely.</Text>
+          <Text style={styles.stepsStyle}>4. Like, comment and share.</Text>
+          <Text style={styles.stepsStyle}>5. Then return to the app.</Text>
+          <Text style={styles.stepsStyle}>6. Answer the questions asked in the app.</Text>
+          <Text style={styles.stepsStyle}>7. Then click on the Submit Answers button.</Text>
+          <Text style={styles.stepsStyle}>8. Now your should get your reward.</Text>
         </>
       )
-    case 'yt_shorts':
+    case 'website_check_in':
       return (
         <>
-          <Text style={styles.stepsStyle}>1. First Click On Start Recording</Text>
-          <Text style={styles.stepsStyle}>2. Now Press The Go Button</Text>
-          <Text style={styles.stepsStyle}>3. Then Play The Short Video ( Whose Screenshot Was Given In The Task )</Text>
-          <Text style={styles.stepsStyle}>
-            4. Now Do Like , Comment , Share ( Copy Link ) And Watch Complete Short Video Once
-          </Text>
-          <Text style={styles.stepsStyle}>
-            5. After This Return To App And Then Click On Stop And Complete Button Wait Untill Video Uploading
-            Successfully
-          </Text>
-          <Text style={styles.stepsStyle}>
-            6. Now Your Task Is In Review , After Checking Your Money Will Be Added Into Your Wallet .
-          </Text>
+          <Text style={styles.stepsStyle}>1. First Click On Start Task</Text>
+          <Text style={styles.stepsStyle}>2. It will redirect you to Website</Text>
+          <Text style={styles.stepsStyle}>3. Read the article or content completely.</Text>
+          <Text style={styles.stepsStyle}>4. Then return to the app.</Text>
+          <Text style={styles.stepsStyle}>5. Answer the questions asked in the app.</Text>
+          <Text style={styles.stepsStyle}>6. Then click on the submit answers button.</Text>
+          <Text style={styles.stepsStyle}>7. Now your should get your reward.</Text>
         </>
       )
   }

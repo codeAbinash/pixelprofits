@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, Linking, StyleSheet, Text, View } from 'react-native'
-import { instant_support_link } from '../../../appData'
+import { instant_support_link, promotion_contact_link } from '../../../appData'
 import images from '../../../assets/images/images'
 import ButtonFull from '../../../components/ButtonFull'
 import { colors } from '../../../styles/colors'
@@ -68,7 +68,7 @@ const Promotion = () => {
 export default Promotion
 
 function contact() {
-  Linking.openURL(instant_support_link)
+  Linking.openURL(promotion_contact_link)
 }
 
 const styles = StyleSheet.create({

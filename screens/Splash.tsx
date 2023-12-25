@@ -224,6 +224,9 @@ const Splash = ({ navigation }: any) => {
             >
               PixelProfits
             </Text>
+            <Text style={{ fontSize: 11, textAlign: 'right', color: 'white', fontFamily: fonts.regular, marginTop: 3 }}>
+              Powered By OSMCID
+            </Text>
           </View>
         </Animated.View>
       </Animated.View>
