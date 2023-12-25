@@ -99,7 +99,9 @@ export default function YouTubeTask({ route, navigation }: any) {
 
   function startTask(index: number, id: number, url: string, question: QuestionT[]) {
     Linking.openURL(url)
-    navigation.replace('questions', { taskType, index, id, question })
+    setTimeout(() => {
+      navigation.replace('questions', { taskType, index, id, question })
+    }, 2000)
   }
 
   if (tasks === null) return <Loading />
