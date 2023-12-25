@@ -433,7 +433,12 @@ const Offer = ({ navigation }: any) => {
                   setAppInstallLink(text)
                 }}
               />
-              <View className='mt-2 w-[105%] flex-row items-center justify-between gap-[4%]'>
+              <View
+                className='mt-2 w-[105%] flex-row items-center justify-between gap-[4%]'
+                style={{
+                  marginTop: 5,
+                }}
+              >
                 <View className='w-[47%]'>
                   <ButtonFull
                     styles={{ backgroundColor: '#ddd' }}
@@ -566,7 +571,7 @@ const Offer = ({ navigation }: any) => {
                     <View className=''>
                       <TouchableOpacity
                         onPress={() => {
-                          Linking.openURL(item.link?.link as string)
+                          item.link?.link && Linking.openURL(item.link?.link as string)
                         }}
                       >
                         <View
