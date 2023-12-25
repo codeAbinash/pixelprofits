@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, Linking, StyleSheet, Text, View } from 'react-native'
-import { email, instant_support_link } from '../../../appData'
+import { instant_support_link } from '../../../appData'
 import images from '../../../assets/images/images'
 import ButtonFull from '../../../components/ButtonFull'
 import { colors } from '../../../styles/colors'

@@ -1,5 +1,3 @@
-export const email = 'winkaro7253@gmail.com'
-
 export const API = 'https://odivrs.com/api/'
 
 export const APP_VERSION_NAME = '1.0'
@@ -38,9 +36,9 @@ export const API_URL = {
 }
 
 export const playStoreLink = 'https://play.google.com/store/apps/details?id=com.pixelprofits'
-export const t_and_c_link = 'https://winkaro.yourexpand.in/terms_and_conditions'
-export const privacy_policy_link = 'https://winkaro.yourexpand.in/privacy_policy'
-export const about_us_link = 'https://winkaro.yourexpand.in/about_us'
+export const t_and_c_link = 'https://odivrs.com/terms_and_conditions'
+export const privacy_policy_link = 'https://odivrs.com/privacy_policy'
+export const about_us_link = 'https://odivrs.com/about_us'
 export const instant_support_link = 'whatsapp://send?text=hello&phone=+918339061567'
 export const INR_TO_COINS = 100
 
