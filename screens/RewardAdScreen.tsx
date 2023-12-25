@@ -10,7 +10,9 @@ import Loading from '../components/Loading'
 import { colors } from '../styles/colors'
 import { fonts } from '../styles/fonts'
 import { getDefaultHeader } from './methods'
-const adUnitId = 'ca-app-pub-1994550698683536/1530151970'
+import { rewardAdId } from '../ads'
+
+const adUnitId = rewardAdId
 
 const rewarded = RewardedAd.createForAdRequest(adUnitId)
 

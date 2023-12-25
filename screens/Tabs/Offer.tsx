@@ -23,6 +23,7 @@ import Loading from '../../components/Loading'
 import { colors } from '../../styles/colors'
 import { fonts } from '../../styles/fonts'
 import { getDefaultHeader } from '../methods'
+import CongratulationModal from '../../components/CongratulationModel'
 
 type OfferData = {
   id: number
@@ -37,8 +38,6 @@ type OfferData = {
     linkText: string
   }
 }
-
-const { width, height } = Dimensions.get('window')
 
 const Offer = ({ navigation }: any) => {
   const [uerNameModal, setUserNameModal] = React.useState(false)
@@ -481,45 +480,7 @@ const Offer = ({ navigation }: any) => {
       </Modal>
 
       {/*Congratulation Modal */}
-      <Modal animationType='fade' transparent={true} visible={congratulationModal.visible}>
-        <View className='flex-1 items-center justify-center bg-[#00000044]'>
-          <View className='overflow-hidden rounded-2xl bg-white' style={{ width: width * 0.85 }}>
-            <Image
-              source={images.congrats}
-              style={{
-                resizeMode: 'contain',
-                width: '100%',
-                height: (561 / 1000) * width * 0.85,
-              }}
-              className=' mx-auto'
-            />
-            <View className='mt-5 flex-row items-center justify-center'>
-              <View className='flex-row items-center justify-center rounded-xl bg-[#00000010] p-3 px-4'>
-                <Image source={icons.coin} style={{ resizeMode: 'contain', width: 30, height: 30 }} />
-                <Text className='ml-3 text-center text-3xl text-[#000]' style={{ fontFamily: fonts.bold }}>
-                  {congratulationModal.coins || ''}
-                </Text>
-              </View>
-            </View>
-
-            <View className='p-10'>
-              <Text className='mb-5 text-center text-base text-[#000]' style={{ fontFamily: fonts.medium }}>
-                {congratulationModal.text}
-              </Text>
-              <ButtonFull
-                title='Ok'
-                onPress={() => {
-                  setCongratulationModal({
-                    visible: false,
-                    coins: 0,
-                    text: 'You have successfully claimed 100 coins.',
-                  })
-                }}
-              />
-            </View>
-          </View>
-        </View>
-      </Modal>
+      <CongratulationModal congratulationModal={congratulationModal} setCongratulationModal={setCongratulationModal} />
 
       <View style={{ marginTop: 30 }}>
         {/* <Text style={{ fontSize: 18, fontFamily: fonts.semiBold, textAlign: 'center', color: colors.text }}>Offers to Claim</Text> */}

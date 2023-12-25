@@ -10,3 +10,9 @@ export type UserData = {
   refer_pending_count: string
   refer_success_count: string
 }
+
+export type QuestionT = {
+  id: number
+  question: string
+  required: 'yes' | 'no'
+}

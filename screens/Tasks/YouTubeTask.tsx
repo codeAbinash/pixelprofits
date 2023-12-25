@@ -39,6 +39,7 @@ import {
   WatchHelp,
   copyToClipboard,
 } from './Components'
+import { QuestionT } from '../types'
 
 const { height, width } = Dimensions.get('window')
 
@@ -95,9 +96,9 @@ export default function YouTubeTask({ route, navigation }: any) {
     getTasks(taskType)
   }, [])
 
-  function startTask(index: number, id: number, url: string) {
+  function startTask(index: number, id: number, url: string, question: QuestionT[]) {
     // Linking.openURL(url)
-    navigation.replace('questions', { taskType: taskType, index: index, id: id })
+    navigation.replace('questions', { taskType, index, id, question })
   }
 
   if (tasks === null) return <Loading />
@@ -379,7 +380,10 @@ export default function YouTubeTask({ route, navigation }: any) {
                     <TouchableOpacity
                       style={[buttons.full, { width: width - 40 }]}
                       activeOpacity={0.8}
-                      onPress={() => startTask(index, id, action_url)}
+                      onPress={() => {
+                        console.log(task.question)
+                        startTask(index, id, action_url, task.question)
+                      }}
                     >
                       <Text
                         style={[

@@ -34,6 +34,7 @@ export const API_URL = {
   telegram_task: API + 'offers/claim/telegram_task',
   app_install_task_claim: API + 'offers/claim/app_install_task',
   app_install_task: API + 'offers/get/app_install_task',
+  submit_answers: API + 'tasks/v3/submit/task',
 }
 
 export const playStoreLink = 'https://play.google.com/store/apps/details?id=com.winkaro'
