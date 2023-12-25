@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, Linking, StyleSheet, Text, View } from 'react-native'
-import { email } from '../../../appData'
+import { email, instant_support_link } from '../../../appData'
 import images from '../../../assets/images/images'
 import ButtonFull from '../../../components/ButtonFull'
 import { colors } from '../../../styles/colors'
@@ -43,25 +43,23 @@ const Promotion = () => {
           paddingHorizontal: 30,
         }}
       >
-        <View
+        {/* <View
           style={{
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
           }}
         >
-          <Text style={styles.emailText}>Send us email : </Text>
-          {/* <TouchableOpacity > */}
+          <Text style={styles.emailText}>Contact us  </Text>
           <Text selectable={true} style={[styles.emailText, { color: colors.accent }]}>
             {email}
           </Text>
-          {/* </TouchableOpacity> */}
           <Text style={styles.emailText}> for promotion</Text>
-        </View>
+        </View> */}
       </View>
 
       <View style={{ padding: 20 }}>
-        <ButtonFull title='Send Email' onPress={sendEmail} />
+        <ButtonFull title='Contact' onPress={contact} />
       </View>
     </View>
   )
@@ -69,8 +67,8 @@ const Promotion = () => {
 
 export default Promotion
 
-function sendEmail() {
-  Linking.openURL(`mailto:${email}`)
+function contact() {
+  Linking.openURL(instant_support_link)
 }
 
 const styles = StyleSheet.create({

@@ -6,6 +6,7 @@ import {
   API_URL,
   APP_VERSION_NAME,
   about_us_link,
+  instant_support_link,
   playStoreLink,
   privacy_policy_link,
   t_and_c_link,
@@ -44,7 +45,7 @@ const Profile = ({ navigation }: any) => {
       title: 'Instant Support (24 x 7)',
       icon: icons.support,
       onPress: () => {
-        Linking.openURL('whatsapp://send?text=hello&phone=+918800136232')
+        Linking.openURL(instant_support_link)
       },
     },
     {

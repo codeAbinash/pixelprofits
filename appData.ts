@@ -2,7 +2,7 @@ export const email = 'winkaro7253@gmail.com'
 
 export const API = 'https://odivrs.com/api/'
 
-export const APP_VERSION_NAME = '3.0'
+export const APP_VERSION_NAME = '1.0'
 
 export const API_URL = {
   register: API + 'register',
@@ -37,11 +37,11 @@ export const API_URL = {
   submit_answers: API + 'tasks/v3/submit/task',
 }
 
-export const playStoreLink = 'https://play.google.com/store/apps/details?id=com.winkaro'
+export const playStoreLink = 'https://play.google.com/store/apps/details?id=com.pixelprofits'
 export const t_and_c_link = 'https://winkaro.yourexpand.in/terms_and_conditions'
 export const privacy_policy_link = 'https://winkaro.yourexpand.in/privacy_policy'
 export const about_us_link = 'https://winkaro.yourexpand.in/about_us'
-
+export const instant_support_link = 'whatsapp://send?text=hello&phone=+918339061567'
 export const INR_TO_COINS = 100
 
 export function coins_to_inr(coins: number, balance: number) {
