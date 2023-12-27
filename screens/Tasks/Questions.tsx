@@ -11,11 +11,9 @@ import { QuestionT } from '../types'
 
 function getAnswersObj(questions: QuestionT[]) {
   const answers: { [key: number]: string } = {}
-  let i = 0
-  questions.forEach((question) => {
+  questions.forEach((question, index) => {
     if (question.required === 'yes') {
-      answers[i] = ''
-      i++
+      answers[index] = ''
     }
   })
   return answers
