@@ -33,9 +33,9 @@ function generateSubmitObject(requiredAnswers: { [key: number]: string }, task_i
     task_id: task_id.toString(),
   }
   const keys = Object.keys(requiredAnswers)
-  keys.forEach((key) => {
+  keys.forEach((key, index) => {
     const i = Number(key) + 1
-    answers['answer_' + i] = requiredAnswers[i - 1]
+    answers['answer_' + (index + 1)] = requiredAnswers[i - 1]
   })
   return answers
 }
